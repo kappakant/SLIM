@@ -5,6 +5,7 @@ from nltk.corpus import stopwords
 import string
 import csv
 
+# n = 50 => Top 50% of TFIDF keywords
 n = 50
 
 training   = pd.read_csv('~/Desktop/4thSem/DATALab/fake_and_real_news/train.csv')
