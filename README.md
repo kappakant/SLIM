@@ -1,4 +1,4 @@
-# LEMMA: $$\mathbf{\mathcal{L}}$imited but $\mathbf{\mathcal{E}}$ffective Information w/o $\mathbf{\mathcal{M}}$etadata in Language $\mathbf{\mathcal{M}}$odel for F$\mathbf{\mathcal{A}}$$ke News
+# LEMMA: $\mathbf{\mathcal{L}}$imited but $\mathbf{\mathcal{E}}$ffective Information w/o $\mathbf{\mathcal{M}}$etadata in Language $\mathbf{\mathcal{M}}$odel for F$\mathbf{\mathcal{A}}$$ke News
 
 # Limited Information 
 POS     - Extracts adjectives and adverbs
