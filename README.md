@@ -9,3 +9,6 @@
 Modify n in a {x}keywords.py file to desired percentage and replace pd.read_csv(...) lines. Execute python {x}keywords.py
 
 Modify n {x}LEMMA.py to be the same as n in {x}keywords.py and replace pd.read_csv(...) lines. Execute python {x}LEMMA.py
+
+# Notes
+Column ["merged_info"] used for our testing, replace with column name containing article text.
