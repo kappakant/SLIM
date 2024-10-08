@@ -437,14 +437,14 @@ auc = tf.keras.metrics.AUC(num_thresholds=100)(flat_true_labels, predictions_lab
 print(f"The AUC for Trial {T} is ", '%.4f' % auc)
 
 # open output file and write new row of data
-trialnumber = T
-area_under_curve = auc
-final_accuracy = (confusion_matrix[0,0]+confusion_matrix[1,1])/np.sum(confusion_matrix)
-f1macro = f1_score(predictions_labels, flat_true_labels, average="macro")
+# trialnumber = T
+# area_under_curve = auc
+# final_accuracy = (confusion_matrix[0,0]+confusion_matrix[1,1])/np.sum(confusion_matrix)
+# f1macro = f1_score(predictions_labels, flat_true_labels, average="macro")
 
-outputDF = pd.dataframe(np.array(trialnumber, area_under_curve, final_accuracy, f1macro),
-                        columns = ["trialnumber", "area_under_curve", "final_accuracy", "f1macro"])
+# outputDF = pd.dataframe(np.array(trialnumber, area_under_curve, final_accuracy, f1macro),
+                        # columns = ["trialnumber", "area_under_curve", "final_accuracy", "f1macro"])
 
-outputDF.to_csv(f"{n}output.csv", mode="a", index=False, header=False) 
+# outputDF.to_csv(f"{n}output.csv", mode="a", index=False, header=False) 
                         
 
