@@ -2,13 +2,15 @@
 
 
 # Limited Information 
+KeyWords - Extracts keywords
+
 POS     - Extracts adjectives and adverbs
 
 NER     - Extracts Named Entities
 
 TFIDF   - Extracts disproportionately frequent words
 
-KeyBERT - Extracts keywords
+
 
 # Files
 
