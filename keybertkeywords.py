@@ -4,7 +4,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # n = 25 => Top 25% of keywords.
-n: int = 25 
+n = 25 
 
 # %%
 ############################ Load the datasets ############################
