@@ -1,20 +1,19 @@
 # LEMMA: $$\mathbf{\mathcal{L}}$imited but $\mathbf{\mathcal{E}}$ffective Information w/o $\mathbf{\mathcal{M}}$etadata in Language $\mathbf{\mathcal{M}}$odel for F$\mathbf{\mathcal{A}}$$ke News
 
 # Limited Information 
-<pre>
 POS     - Extracts adjectives and adverbs
 
 NER     - Extracts Named Entities
 
 TFIDF   - Extracts disproportionatel frequent words
 
-KeyBERT - Extracts keywords <pre>
+KeyBERT - Extracts keywords
 
 # Files
 
 {x}keywords.py => Input dataset as csv, outputs dataset with new column containing {x} keywords.
 
-{x}LEMMA.py => Input dataset generated from {x}keywords.py, prints output of LEMMA model on dataset.
+{x}LEMMA.py    => Input dataset generated from {x}keywords.py, prints output of LEMMA model on dataset.
 
 # How to use
 
