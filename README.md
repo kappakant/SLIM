@@ -28,6 +28,10 @@ Modify n in a {x}LEMMA.py to be the same as n in {x}keywords.py.
 
 ```python {x}LEMMA.py```
 
+Modify Fcsv in shannon.py to desired csv and change output destination.
+
+```python shannon.py```
+
 # Notes
 Column ["merged_info"] used for our testing, this column contained purely article text. Replace with column name containing article text for other datasets.
 
