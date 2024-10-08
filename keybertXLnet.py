@@ -17,7 +17,7 @@ import csv # To save results in output csv
 warnings.filterwarnings('ignore')
 
 # %% 
-# n = 25 => Top 25% keyBERT keywords.
+# n = 25 => Run model on csv with Top 25% Keywords.
 n = 25
 
 # Determines file name when saving model. Can be replaced with arbitrary value.
