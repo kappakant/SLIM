@@ -3,7 +3,8 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
-n: int = 25 # percent
+# n = 25 => Top 25% of keywords.
+n: int = 25 
 
 # %%
 ############################ Load the datasets ############################
