@@ -16,6 +16,8 @@ NER     - Extracts Named Entities
 
 {x}LEMMA.py    => Input dataset generated from {x}keywords.py, prints output of LEMMA model on dataset.
 
+shannon.py => Input dataset as csv, outputs dataset with new column containing shannon score of another column
+
 # How to use
 
 Modify n in a {x}keywords.py file to desired percentage and replace pd.read_csv(...) lines. 
