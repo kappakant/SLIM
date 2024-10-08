@@ -2,9 +2,14 @@
 
 # Limited Information
 POS     - Extracts adjectives and adverbs
+
 NER     - Extracts Named Entities
+
 TFIDF   - Extracts disproportionatel frequent words
+
 KeyBERT - Extracts keywords
+
+# Files
 
 {x}keywords.py => Input dataset as csv, outputs dataset with new column containing {x} keywords.
 
