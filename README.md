@@ -1,13 +1,13 @@
 # LEMMA: $$\mathbf{\mathcal{L}}$imited but $\mathbf{\mathcal{E}}$ffective Information w/o $\mathbf{\mathcal{M}}$etadata in Language $\mathbf{\mathcal{M}}$odel for F$\mathbf{\mathcal{A}}$$ke News
 
-# Limited Information
+# Limited Information <pre>
 POS     - Extracts adjectives and adverbs
 
 NER     - Extracts Named Entities
 
 TFIDF   - Extracts disproportionatel frequent words
 
-KeyBERT - Extracts keywords
+KeyBERT - Extracts keywords <pre>
 
 # Files
 
