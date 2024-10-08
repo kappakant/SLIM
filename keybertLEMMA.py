@@ -20,8 +20,9 @@ warnings.filterwarnings('ignore')
 # n = 25 => Run model on csv with Top 25% Keywords.
 n = 25
 
-# Determines file name when saving model. Can be replaced with arbitrary value.
-T = sys.argv[1]
+# Determines file name when saving model. Can be ignored.
+# T = sys.argv[1]
+T = 1
 
 # Replace csv files.
 ############################ Load the datasets ############################
