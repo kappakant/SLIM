@@ -2,6 +2,7 @@ import nltk
 import pandas as pd
 import math
 
+# n = 100 => All NER in full article
 n = 100
 
 # installed punkt
