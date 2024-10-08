@@ -16,12 +16,13 @@ import warnings
 import csv # To save results in output csv
 warnings.filterwarnings('ignore')
 
-# %%
+# %% 
 n = 25
 
-# Queued using new condor_submit strategy. 
+# Determines file name when saving model. Can be replaced with arbitrary value.
 T = sys.argv[1]
 
+# Replace csv files.
 ############################ Load the datasets ############################
 training_preprocessed   = pd.read_csv(f'~/csvs/train_{n}keywords.csv')
 testing_preprocessed    = pd.read_csv(f'~/csvs/test_{n}keywords.csv')
