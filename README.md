@@ -8,8 +8,6 @@ POS     - Extracts adjectives and adverbs
 
 NER     - Extracts Named Entities
 
-TFIDF   - Extracts disproportionately frequent words
-
 
 
 # Files
