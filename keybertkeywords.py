@@ -3,6 +3,8 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
+n: int = 25 # percent
+
 # %%
 ############################ Load the datasets ############################
 training   = pd.read_csv('~/Desktop/4thSem/DATALab/fake_and_real_news/train.csv').reset_index(drop=True)
@@ -190,7 +192,6 @@ def dataset_keyword_extraction(dataset, n: float):
 
 # %%
 # 100% KW Test
-n: int = 25 # percent
 training_preprocessed = dataset_keyword_extraction(training_preprocessed, n)
 testing_preprocessed = dataset_keyword_extraction(testing_preprocessed, n)
 validation_preprocessed = dataset_keyword_extraction(validation_preprocessed, n)
