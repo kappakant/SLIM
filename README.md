@@ -1,4 +1,4 @@
-# LEMMA: Limited but Effective Information w/o Metadata in Language Model for FAke News
+# LEMMA: $\mathbf{\mathcal{L}}$imited but $\mathbf{\mathcal{E}}$ffective Information w/o $\mathbf{\mathcal{M}}$etadata in Language $\mathbf{\mathcal{M}}$odel for F$\mathbf{\mathcal{A}}$ke News
 
 {x}keywords.py => Input dataset as csv, outputs dataset with new column containing {x} keywords.
 
