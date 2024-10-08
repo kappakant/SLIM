@@ -1,4 +1,5 @@
-# LEMMA: $\mathbf{\mathcal{L}}$imited but $\mathbf{\mathcal{E}}$ffective Information w/o $\mathbf{\mathcal{M}}$etadata in Language $\mathbf{\mathcal{M}}$odel for F$\mathbf{\mathcal{A}}$$ke News
+# **L**imited but **E**ffective Information w/o **M**etadata in Language **M**odel for F**A**ke News (LEMMA)
+
 
 # Limited Information 
 POS     - Extracts adjectives and adverbs
