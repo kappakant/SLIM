@@ -27,3 +27,9 @@ Modify n in a {x}LEMMA.py to be the same as n in {x}keywords.py and replace pd.r
 
 # Notes
 Column ["merged_info"] used for our testing, this column contained purely article text. Replace with column name containing article text for other datasets.
+
+## Citation
+
+If you use this work, please cite:
+
+Author(s). (Year). Title of the Paper. Journal Name, Volume(Issue), Page numbers. DOI: [DOI link]
