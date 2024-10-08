@@ -26,4 +26,4 @@ Modify n in a {x}LEMMA.py to be the same as n in {x}keywords.py and replace pd.r
 ```python {x}LEMMA.py```
 
 # Notes
-Column ["merged_info"] used for our testing, replace with column name containing article text.
+Column ["merged_info"] used for our testing, this column contained purely article text. Replace with column name containing article text for other datasets.
