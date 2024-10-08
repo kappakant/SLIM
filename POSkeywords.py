@@ -4,7 +4,7 @@ from nltk.tokenize import word_tokenize
 from nltk.tag import pos_tag
 import math
 
-# try 10, 20, and 30% for both
+# n = 25 => List of adverbs/adjectives not exceeding 25% length of csv.
 n = 25  
 
 training   = pd.read_csv("~/Desktop/4thSem/DATALab/fake_and_real_news/train.csv").reset_index(drop=True)
