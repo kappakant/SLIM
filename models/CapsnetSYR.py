@@ -9,6 +9,7 @@ import sys
 
 # Converted from jpyter notebook for HTCondor pool
 # Modified to not include title in the dataset
+# Refer to https://github.com/sashanksridhar/Fake-News-Detection-and-Analysis-using-Multitask-Learning-with-BiLSTM-CapsNet-model
 
 # Changes file destination name when saving. Feel free to set to a constant
 Process = sys.argv[1] 
