@@ -28,7 +28,7 @@ Modify n in a {x}LEMMA.py to be the same as n in {x}keywords.py.
 
 ```python {x}LEMMA.py```
 
-Modify Fcsv in shannon.py to desired csv and change output destination.
+Modify Fcsv in shannon.py to desired csv and change column names.
 
 ```python shannon.py```
 
