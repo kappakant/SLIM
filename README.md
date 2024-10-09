@@ -35,6 +35,8 @@ Modify Fcsv in shannon.py to desired csv and change output destination.
 # Notes
 Column ["merged_info"] used for in some files, this column contained purely article text. Replace with column name containing article text for other datasets.
 
+Please refer to the DOCEMB and Capsnet github pages for their respective requirements.
+
 ## Citation
 
 If you use this work, please cite:
