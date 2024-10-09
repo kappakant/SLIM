@@ -8,6 +8,7 @@ __email__ = "ciprian.truica@upb.ro"
 __status__ = "Production"
 
 # Modifications to hyperparameters compared to Truica's implementation.
+# Refer to https://github.com/cipriantruica/MisRoBAERTa_Transformers-vs-misinformation/blob/main/README.md
 
 import os
 import sys
