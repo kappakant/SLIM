@@ -7,6 +7,8 @@ __version__ = "0.1"
 __email__ = "ciprian.truica@upb.ro"
 __status__ = "Production"
 
+# Modifications to hyperparameters compared to Truica's implementation.
+
 import os
 import sys
 from keras.utils import to_categorical
