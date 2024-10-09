@@ -8,6 +8,7 @@ from keras.engine.topology import Layer
 import sys
 
 # Converted from jpyter notebook for HTCondor pool
+# Modified to not include title in the dataset
 
 # Changes file destination name when saving. Feel free to set to a constant
 Process = sys.argv[1] 
