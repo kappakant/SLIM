@@ -1,7 +1,7 @@
 # coding: utf-8
 
 # Modifications to hyperparameters compared to Truica's implementation.
-# Refer to https://github.com/cipriantruica/MisRoBAERTa_Transformers-vs-misinformation/blob/main/README.md
+# Refer to https://github.com/cipriantruica/MisRoBAERTa_Transformers-vs-misinformation
 
 import os
 import sys
