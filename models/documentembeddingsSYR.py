@@ -7,6 +7,7 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Modified for more robustness when input is suboptimal.
+# In models.py, changed EarlyStopping patience = 10
 # Refer to https://github.com/DS4AI-UPB/It-s-all-in-the-Embedding
 
 class DocumentEmbeddings:
