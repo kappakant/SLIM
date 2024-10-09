@@ -1,12 +1,5 @@
 # coding: utf-8
 
-__author__ = "Ciprian-Octavian Truică"
-__copyright__ = "Copyright 2021, University Politehnica of Bucharest"
-__license__ = "GNU GPL"
-__version__ = "0.1"
-__email__ = "ciprian.truica@upb.ro"
-__status__ = "Production"
-
 # Modifications to hyperparameters compared to Truica's implementation.
 # Refer to https://github.com/cipriantruica/MisRoBAERTa_Transformers-vs-misinformation/blob/main/README.md
 
