@@ -8,7 +8,6 @@ from keras.engine.topology import Layer
 import sys
 
 # Converted from jpyter notebook for HTCondor pool
-# Note: for some of our testing, title was not included in the dataset and lines referring to title were commented out.
 
 # Changes file destination name when saving. Feel free to set to a constant
 Process = sys.argv[1] 
@@ -536,17 +535,17 @@ def load_imdb(maxlen=1000):
     Xt = pad_sequences(sequences = Xt, maxlen = maxlen)
     # x_train = sequence.pad_sequences(x_train['body_text'], maxlen=maxlen)
     # x_test = sequence.pad_sequences(x_test['body_text'], maxlen=maxlen)
-    tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
-    tokenizer_title.fit_on_texts(texts = x_train['title'])
-    X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
-    X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
-    Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
-    Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
-    return X,X_title, y_train, Xt,Xt_title, y_test
+    #tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
+    #tokenizer_title.fit_on_texts(texts = x_train['title'])
+    #X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
+    #X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
+    #Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
+    #Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
+    return X, y_train, Xt, y_test
 
 
 def main():
-    x_train,x_train1, y_train, x_test,x_test1, y_test = load_imdb()
+    x_train, y_train, x_test, y_test = load_imdb()
 
     model = get_model()
 
@@ -663,17 +662,17 @@ def load_imdb(maxlen=1000):
     Xt = pad_sequences(sequences = Xt, maxlen = maxlen)
     # x_train = sequence.pad_sequences(x_train['body_text'], maxlen=maxlen)
     # x_test = sequence.pad_sequences(x_test['body_text'], maxlen=maxlen)
-    tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
-    tokenizer_title.fit_on_texts(texts = x_train['title'])
-    X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
-    X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
-    Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
-    Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
-    return X,X_title, y_train, Xt,Xt_title, y_test
+    #tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
+    #tokenizer_title.fit_on_texts(texts = x_train['title'])
+    #X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
+    #X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
+    #Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
+    #Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
+    return X, y_train, Xt, y_test
 
 
 def main():
-    x_train,x_train1, y_train, x_test,x_test1, y_test = load_imdb()
+    x_train, y_train, x_test, y_test = load_imdb()
 
     model = get_model()
 
@@ -795,17 +794,17 @@ def load_imdb(maxlen=1000):
     Xt = pad_sequences(sequences = Xt, maxlen = maxlen)
     # x_train = sequence.pad_sequences(x_train['body_text'], maxlen=maxlen)
     # x_test = sequence.pad_sequences(x_test['body_text'], maxlen=maxlen)
-    tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
-    tokenizer_title.fit_on_texts(texts = x_train['title'])
-    X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
-    X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
-    Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
-    Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
-    return X,X_title, y_train, Xt,Xt_title, y_test
+    #tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
+    #tokenizer_title.fit_on_texts(texts = x_train['title'])
+    #X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
+    #X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
+    #Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
+    #Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
+    return X, y_train, Xt, y_test
 
 
 def main():
-    x_train,x_train1, y_train, x_test,x_test1, y_test = load_imdb()
+    x_train, y_train, x_test, y_test = load_imdb()
 
     model = get_model()
 
@@ -935,17 +934,17 @@ def load_imdb(maxlen=1000):
     Xt = pad_sequences(sequences = Xt, maxlen = maxlen)
     # x_train = sequence.pad_sequences(x_train['body_text'], maxlen=maxlen)
     # x_test = sequence.pad_sequences(x_test['body_text'], maxlen=maxlen)
-    tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
-    tokenizer_title.fit_on_texts(texts = x_train['title'])
-    X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
-    X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
-    Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
-    Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
-    return X,X_title, y_train, Xt,Xt_title, y_test
+    #tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
+    #tokenizer_title.fit_on_texts(texts = x_train['title'])
+    #X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
+    #X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
+    #Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
+    #Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
+    return X, y_train, Xt, y_test
 
 
 def main():
-    x_train,x_train1, y_train, x_test,x_test1, y_test = load_imdb()
+    x_train, y_train, x_test, y_test = load_imdb()
 
     model = get_model()
 
@@ -1088,17 +1087,17 @@ def load_imdb(maxlen=1000):
     Xt = pad_sequences(sequences = Xt, maxlen = maxlen)
     # x_train = sequence.pad_sequences(x_train['body_text'], maxlen=maxlen)
     # x_test = sequence.pad_sequences(x_test['body_text'], maxlen=maxlen)
-    tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
-    tokenizer_title.fit_on_texts(texts = x_train['title'])
-    X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
-    X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
-    Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
-    Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
-    return X,X_title, y_train, Xt,Xt_title, y_test
+    #tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
+    #tokenizer_title.fit_on_texts(texts = x_train['title'])
+    #X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
+    #X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
+    #Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
+    #Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
+    return X, y_train, Xt, y_test
 
 
 def main():
-    x_train,x_train1, y_train, x_test,x_test1, y_test = load_imdb()
+    x_train, y_train, x_test, y_test = load_imdb()
 
     model = get_model()
 
@@ -1241,17 +1240,17 @@ def load_imdb(maxlen=1000):
     Xt = pad_sequences(sequences = Xt, maxlen = maxlen)
     # x_train = sequence.pad_sequences(x_train['body_text'], maxlen=maxlen)
     # x_test = sequence.pad_sequences(x_test['body_text'], maxlen=maxlen)
-    tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
-    tokenizer_title.fit_on_texts(texts = x_train['title'])
-    X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
-    X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
-    Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
-    Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
-    return X,X_title, y_train, Xt,Xt_title, y_test
+    #tokenizer_title = Tokenizer(num_words = maxlen, filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower = True, split = ' ')
+    #tokenizer_title.fit_on_texts(texts = x_train['title'])
+    #X_title = tokenizer_title.texts_to_sequences(texts = x_train['title'])
+    #X_title = pad_sequences(sequences = X_title, maxlen = maxlen)
+    #Xt_title = tokenizer_title.texts_to_sequences(texts=x_test['title'])
+    #Xt_title = pad_sequences(sequences = Xt_title, maxlen = maxlen)
+    return X, y_train, Xt, y_test
 
 
 def main():
-    x_train,x_train1, y_train, x_test,x_test1, y_test = load_imdb()
+    x_train, y_train, x_test, y_test = load_imdb()
 
     model = get_model()
 
