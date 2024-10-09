@@ -7,8 +7,11 @@ from keras import backend as K
 from keras.engine.topology import Layer
 import sys
 
-# Keeps unique .h5 file
-Process = sys.argv[1]
+# Converted from jpyter notebook for HTCondor pool
+
+# Changes file destination name when saving. Feel free to set to a constant
+Process = sys.argv[1] 
+
 
 def squash(x, axis=-1):
     s_squared_norm = K.sum(K.square(x), axis, keepdims=True) + K.epsilon()
