@@ -37,8 +37,8 @@ print(Fcsv.head())
 # Replace "keywords" with desired column
 Fcsv["sig_entropy_score"] = Fcsv.apply(lambda x: sig_entropy(x, "keywords"), axis=1)
 
-Fcsv.to_csv(f"~/Desktop/DATALab/minimum/recovery/train_.csv", index=False)
-
 #calculate average shannon score
 average_shannonKW = Fcsv["sig_entropy_score"].sum() / len(Fcsv)
 print(f"Keywords: {average_shannonKW}")
+
+# Fcsv.to_csv(f"~/Desktop/DATALab/minimum/recovery/train_.csv", index=False)
