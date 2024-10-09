@@ -35,7 +35,7 @@ Modify Fcsv in shannon.py to desired csv and change column names.
 # Notes
 Column ["merged_info"] used in some files, this column contained purely article text. Replace with column name containing article text for other datasets.
 
-Requirements.txt lists required packages for running LEMMA scripts. Please refer to the github pages of DOCEMB, MisRoBÆRTa, and CapsNet respectively if testing the other models.
+Requirements.txt lists required packages for running LEMMA scripts. Please refer to the github pages of DOCEMB, MisRoBÆRTa, and CapsNet respectively if using the other models.
 
 ## Citation
 
