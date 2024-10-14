@@ -1,4 +1,4 @@
-# ''Good'' Less Can be More:\\Fake News Detection with Limited Information
+# ''Good'' Less Can be More: Fake News Detection with Limited Information
 
 # Limited Information 
 KeyWords - Extracts keywords
