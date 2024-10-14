@@ -1,5 +1,4 @@
-# **L**imited but **E**ffective Information w/o **M**etadata in Language **M**odel for F**A**ke News (LEMMA)
-
+# ``Good'' Less Can be More:\\Fake News Detection with Limited Information
 
 # Limited Information 
 KeyWords - Extracts keywords
@@ -14,7 +13,7 @@ NER     - Extracts Named Entities
 
 {x}keywords.py => Input dataset as csv, outputs dataset with new column containing {x} keywords.
 
-{x}LEMMA.py    => Input dataset generated from {x}keywords.py, prints output of LEMMA model on dataset.
+{x}SLIM.py    => Input dataset generated from {x}keywords.py, prints output of SLIM model on dataset.
 
 shannon.py => Input dataset as csv, outputs dataset with new column containing shannon score of another column
 
@@ -26,7 +25,7 @@ Modify n in a {x}keywords.py file to desired percentage and replace pd.read_csv(
 
 Modify n in a {x}LEMMA.py to be the same as n in {x}keywords.py.
 
-```python {x}LEMMA.py```
+```python {x}SLIM.py```
 
 Modify Fcsv in shannon.py to desired csv and change column names.
 
@@ -35,7 +34,7 @@ Modify Fcsv in shannon.py to desired csv and change column names.
 # Notes
 Column ["merged_info"] used in some files, this column contained purely article text. Replace with column name containing article text for other datasets.
 
-Requirements.txt lists required packages for running LEMMA files. Please refer to the github pages of DOCEMB, MisRoBÆRTa, and CapsNet respectively if using the other models.
+Requirements.txt lists required packages for running SLIM files. Please refer to the github pages of DOCEMB, MisRoBÆRTa, and CapsNet respectively if using the other models.
 
 ## Citation
 
