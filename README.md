@@ -23,7 +23,7 @@ Modify n in a {x}keywords.py file to desired percentage and replace pd.read_csv(
 
 ```python {x}keywords.py```
 
-Modify n in a {x}LEMMA.py to be the same as n in {x}keywords.py.
+Modify n in a {x}SLIM.py to be the same as n in {x}keywords.py.
 
 ```python {x}SLIM.py```
 
