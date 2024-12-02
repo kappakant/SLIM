@@ -1,4 +1,4 @@
-# 'Is Less Really More? Fake News Detection with Limited Information
+# Is Less Really More? Fake News Detection with Limited Information
 
 # Limited Information 
 KeyWords - Extracts keywords
