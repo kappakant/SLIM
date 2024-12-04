@@ -10,9 +10,9 @@ n = 100
 #           maxent_ne_chunker
 #           words
 
-training_preprocessed = pd.read_csv(f"~/Desktop/4thSem/DATALab/fake_and_real_news/train.csv")
-testing_preprocessed = pd.read_csv(f"~/Desktop/4thSem/DATALab/fake_and_real_news/test.csv")
-validation_preprocessed = pd.read_csv(f"~/Desktop/4thSem/DATALab/fake_and_real_news/val.csv")
+training_preprocessed = pd.read_csv(f"~/Research/fake_and_real_news/train.csv")
+testing_preprocessed = pd.read_csv(f"~/Research/fake_and_real_news/test.csv")
+validation_preprocessed = pd.read_csv(f"~/Research/fake_and_real_news/val.csv")
 
 def extract_ner_entities(text):
     tokens = nltk.word_tokenize(text)
@@ -37,6 +37,6 @@ validation_preprocessed['NER_words'] = validation_preprocessed['body_text'].appl
 
 training_preprocessed.head(2)
 
-training_preprocessed.to_csv(f'~/Desktop/4thSem/DATALab/fake_and_real_news/train_NER{str(n)}keywords.csv',index=False)
-testing_preprocessed.to_csv(f'~/Desktop/4thSem/DATALab/fake_and_real_news/test_NER{str(n)}keywords.csv',index=False)
-validation_preprocessed.to_csv(f'~/Desktop/4thSem/DATALab/fake_and_real_news/val_NER{str(n)}keywords.csv',index=False)
+training_preprocessed.to_csv(f'~/Research/fake_and_real_news/train_NER{str(n)}keywords.csv',index=False)
+testing_preprocessed.to_csv(f'~/Research/fake_and_real_news/test_NER{str(n)}keywords.csv',index=False)
+validation_preprocessed.to_csv(f'~/Research/fake_and_real_news/val_NER{str(n)}keywords.csv',index=False)
