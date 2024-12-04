@@ -8,9 +8,9 @@ n = 25
 
 # %%
 ############################ Load the datasets ############################
-training   = pd.read_csv('~/Desktop/4thSem/DATALab/fake_and_real_news/train.csv').reset_index(drop=True)
-testing    = pd.read_csv('~/Desktop/4thSem/DATALab/fake_and_real_news/test.csv').reset_index(drop=True)
-validation = pd.read_csv('~/Desktop/4thSem/DATALab/fake_and_real_news/val.csv').reset_index(drop=True)
+training   = pd.read_csv('~/Research/fake_and_real_news/train.csv').reset_index(drop=True)
+testing    = pd.read_csv('~/Research/fake_and_real_news/test.csv').reset_index(drop=True)
+validation = pd.read_csv('~/Research/fake_and_real_news/val.csv').reset_index(drop=True)
 '''
 training.columns = ['statement_id', 'pre_label','body_text', 'subject', 'speaker','speaker_job_title', 'state_info',
                     'party_affiliation', 'barely_true_count','false_count','half_true_count','mostly_true_count','pants_on_fire_count',
@@ -205,8 +205,8 @@ training_preprocessed.head(2)
 # ## Save keyword dataset
 
 # %%
-training_preprocessed.to_csv(f'~/Desktop/4thSem/DATALab/fake_and_real_news/train_{str(n)}keywords.csv',index=False)
-testing_preprocessed.to_csv(f'~/Desktop/4thSem/DATALab/fake_and_real_news/test_{str(n)}keywords.csv',index=False)
-validation_preprocessed.to_csv(f'~/Desktop/4thSem/DATALab/fake_and_real_news/val_{str(n)}keywords.csv',index=False)
+training_preprocessed.to_csv(f'~/Research/fake_and_real_news/train_{str(n)}keywords.csv',index=False)
+testing_preprocessed.to_csv(f'~/Research/fake_and_real_news/test_{str(n)}keywords.csv',index=False)
+validation_preprocessed.to_csv(f'~/Research/fake_and_real_news/val_{str(n)}keywords.csv',index=False)
 
 
