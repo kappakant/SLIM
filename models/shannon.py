@@ -30,7 +30,7 @@ def sig_entropy(row, column):
 import pandas as pd
 
 # Replace with desired CSV
-Fcsv = pd.read_csv("~/Desktop/DATALab/minimum/recovery/train_keybert_10.csv")
+Fcsv = pd.read_csv("~/Research/minimum/recovery/train_keybert_10.csv")
 
 print(Fcsv.head())
 
