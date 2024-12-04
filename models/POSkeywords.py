@@ -7,9 +7,9 @@ import math
 # n = 25 => List of adverbs/adjectives not exceeding 25% length of csv. Truncates POS words later in the article
 n = 25  
 
-training   = pd.read_csv("~/Desktop/4thSem/DATALab/fake_and_real_news/train.csv").reset_index(drop=True)
-testing    = pd.read_csv('~/Desktop/4thSem/DATALab/fake_and_real_news/test.csv').reset_index(drop=True)
-validation = pd.read_csv('~/Desktop/4thSem/DATALab/fake_and_real_news/val.csv').reset_index(drop=True)
+training   = pd.read_csv("~/Research/fake_and_real_news/train.csv").reset_index(drop=True)
+testing    = pd.read_csv('~/Research/fake_and_real_news/test.csv').reset_index(drop=True)
+validation = pd.read_csv('~/Research/fake_and_real_news/val.csv').reset_index(drop=True)
 
 # Zhaoyang Code
 # Preprocessing the contents text: such as remove all non alphabet characters, 
@@ -94,6 +94,6 @@ training_preprocessed['POS_words'] = training_preprocessed['merged_info'].apply(
 testing_preprocessed['POS_words'] = testing_preprocessed['merged_info'].apply(extract_pos_words).astype(str).apply(preprocess_text)
 validation_preprocessed['POS_words'] = validation_preprocessed['merged_info'].apply(extract_pos_words).astype(str).apply(preprocess_text)
 
-training_preprocessed.to_csv(f"~/Desktop/4thSem/DATALab/fake_and_real_news/POS{n}train.csv", index=False)
-testing_preprocessed.to_csv(f"~/Desktop/4thSem/DATALab/fake_and_real_news/POS{n}test.csv", index=False)
-validation_preprocessed.to_csv(f"~/Desktop/4thSem/DATALab/fake_and_real_news/POS{n}val.csv", index=False)
+training_preprocessed.to_csv(f"~/Research/fake_and_real_news/POS{n}train.csv", index=False)
+testing_preprocessed.to_csv(f"~/Research/fake_and_real_news/POS{n}test.csv", index=False)
+validation_preprocessed.to_csv(f"~/Research/fake_and_real_news/POS{n}val.csv", index=False)
